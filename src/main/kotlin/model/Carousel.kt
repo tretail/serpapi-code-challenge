@@ -11,8 +11,8 @@ data class Artwork(
     val name: String,
     @JsonInclude(JsonInclude.Include.NON_NULL) // FIXME: null serialization not consistent between extensions and image
     val extensions: List<String>?,
-    val link: String,
-    val image: String?
+    val link: String, // TODO: use proper type instead of String
+    val image: String? // TODO: use proper type instead of String
 
 )
 
